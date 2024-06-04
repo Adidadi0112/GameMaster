@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:game_master_app/widgets/nav_bar.dart';
+import 'package:game_master_app/widgets/text_scanner.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: const Text('Game Master'),
       ),
-      body: Stack(children: [NavBar()],)
+      body: Stack(children: [TextScanner(), NavBar()],)
     );
   }
 }
